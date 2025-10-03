@@ -1,0 +1,123 @@
+/* ================================
+   Root Variables
+   ================================ */
+:root {
+  --fg: #111;
+  --bg: #f0f0f0;  /* Slightly darker background */
+  --ui: #f7f7f7;  /* Subtle UI background shade */
+  --btn-bg: #fefefe;
+  --btn-hover-bg: #e0e0e0;  /* Button hover background */
+  --shadow-color: rgba(0, 0, 0, 0.1);  /* Soft shadow color */
+}
+
+/* ================================
+   Global Reset
+   ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+/* ================================
+   Layout Containers
+   ================================ */
+#game {
+  display: block;
+  margin: 24px auto 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;  /* Slight rounding for a softer look */
+  box-shadow: 0 4px 8px var(--shadow-color);  /* Added shadow */
+  transition: box-shadow 0.3s ease;  /* Smooth shadow transition */
+}
+
+#ui {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--ui);
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);  /* Added shadow */
+  transition: box-shadow 0.3s ease;  /* Smooth shadow transition */
+}
+
+#game:hover, #ui:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 6px 0;
+}
+
+/* ================================
+   UI Elements
+   ================================ */
+button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--btn-bg);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;  /* Button transitions */
+}
+
+button:hover {
+  background: var(--btn-hover-bg);
+  transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+button:active {
+  transform: scale(0.98);  /* Button press effect */
+}
+
+/* ================================
+   Text Helpers
+   ================================ */
+.hint {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+kbd {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+code {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  overflow-x: auto;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
