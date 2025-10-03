@@ -1,0 +1,28 @@
+{
+  "levels": [
+    {
+      "goal": 15,
+      "timeLimit": 60,
+      "spawnEvery": 0.8,
+      "crowSpawnEvery": 5,
+      "powerUpSpawnEvery": 10,
+      "numScarecrows": 2
+    },
+    {
+      "goal": 30,
+      "timeLimit": 55,
+      "spawnEvery": 0.6,
+      "crowSpawnEvery": 3,
+      "powerUpSpawnEvery": 8,
+      "numScarecrows": 3
+    },
+    {
+      "goal": 100,
+      "timeLimit": 50,
+      "spawnEvery": 0.4,
+      "crowSpawnEvery": 2,
+      "powerUpSpawnEvery": 6,
+      "numScarecrows": 4
+    }
+  ]
+}
